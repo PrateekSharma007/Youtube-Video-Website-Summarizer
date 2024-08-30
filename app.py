@@ -1,4 +1,3 @@
-  
 
 import validators,streamlit as st
 from langchain.prompts import PromptTemplate
@@ -24,7 +23,7 @@ generic_url=st.text_input("URL",label_visibility="collapsed")
 llm =ChatGroq(model="Gemma-7b-It", groq_api_key=groq_api_key)
 
 prompt_template="""
-Provide a summary of the following content in 300 words:
+Summarize the key points of the following YouTube video in 300 words. Ensure the summary captures the main themes, key moments, and any notable elements, whether it's a song, tutorial, or any other type of content:
 Content:{text}
 
 """
