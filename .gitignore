@@ -1,0 +1,16 @@
+# Ignore the environment folder
+/env/
+/venv/
+/conda_env/
+
+# Ignore Anaconda packages
+/lib/
+/bin/
+/include/
+
+# Ignore VS Code settings if not needed
+.vscode/
+
+# Ignore compiled Python files
+__pycache__/
+*.py[cod]
