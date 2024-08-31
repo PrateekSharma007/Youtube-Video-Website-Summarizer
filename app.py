@@ -22,7 +22,7 @@ with st.sidebar:
 generic_url=st.text_input("URL",label_visibility="collapsed")
 
 ## Gemma Model USsing Groq API
-llm =ChatGroq(model="Gemma-7b-It", groq_api_key=groq_api_key)
+llm = ChatGroq(model="Gemma-7b-It", groq_api_key=groq_api_key)
 
 prompt_template="""
 Summarize the key points of the following YouTube video in 300 words. Ensure the summary captures the main themes, key moments, and any notable elements, whether it's a song, tutorial, or any other type of content:
